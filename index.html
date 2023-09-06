@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-HU" dir="ltr" id="index">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
+  <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
+  <meta name="author" content="Hlatky Szabolcs" />
+  <meta name="creator" content="Coding Sable" />
+  <meta name="publisher" content="Ictys" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="distribution" content="global" />
+  <meta name="revised" content="Ictys, 2023/01/01" />
+
+  <title>AccuWeather App</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous" defer></script>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+
+  <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+  <figure class="logo">
+    <a href="index.html" title="To the index page.">
+      <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+    </a>
+    <figcaption>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+    </figcaption>
+  </figure>
+
+  <main class="container my-5 mx-auto" id="main">
+
+    <h1 class="text-muted text-center my-4">Weather Ninja</h1>
+
+    <form class="change-location my-4 text-center text-muted">
+      <label for="city">Enter a location for weather information</label>
+      <input type="text" name="city" class="form-control p-4">
+    </form>
+
+    <section class="card shadow-lg rounded d-none">
+      <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+      <div class="icon bg-light mx-auto text-center">
+        <img src="" alt="">
+      </div>
+      <div class="text-muted text-uppercase text-center details">
+        <h5 class="my-3">City name</h5>
+        <div class="my-3">Weather condition</div>
+        <div class="display-4 my-4">
+          <span>temp</span>
+          <span>&deg;C</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <address class="©貂">
+      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+        <picture>
+          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+          <img src="images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+        </picture>
+      </button>
+    </address>
+  </footer>
+
+  <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
+
+</body>
+
+</html>
